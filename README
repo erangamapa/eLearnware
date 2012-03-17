@@ -1,1 +1,60 @@
-this is a test readme file
+eLearnware extension for MediaWiki
+
+1. Overview
+2. Installing eLearnware Extension
+3. New Special Pages
+4. How to use
+5. Credits
+
+==1. Overview==
+This MediaWiki extension facilitates synchronizing contents with HTML5 
+video for MedaiWiki. Targeted purpose is to view rich video lectures 
+synchronized with slides. 
+
+==2. Installing eLearnware extension==
+Installing the eLearnware extension can be done in few steps.
+
+step 1
+You should run eLearnware.sql against your wiki database.
+Then a new table named my_wikislides will be added.
+
+Step 2
+Then add the following into the end of your wiki's LocalSettings.php:
+require_once( "$IP/extensions/eLearnware/eLearnware.php" );
+
+Step 3
+Open eLearnware.php in the eLearnware extension folder.
+Then go to variable $myPath and add the path from your server root to eLearnware extension folder.
+Example:
+Suppose your wiki is installed in a folder named wiki in your server root.
+Then $myPath='/wiki/extensions/eLearnware/';
+
+Now you can access two special pages of this extension in your wiki's SpecialPages page.
+
+
+==3. New Special Pages==
+Video extension introduces two new special pages, Special:Editor and Special:Viewer.
+
+Special:Editor is used to add a video and assign content to synchronize with that video.
+Special:Viewer is used to view videos synchronized with content.
+
+==4. How to use==
+
+Step 1
+Create two copies of the HTML5 video file, one in .mp4 format and the other in .ogv format.
+
+Step 2
+Then upload both files to wiki/extensions/eLearnware/content directory.
+
+Step 3.
+Now go to special page Special:Editor. Then you must type the name of the video that you have uploaded. 
+Then click save.
+
+Step 4.
+Now you will be moved to the video editing environment. Here you can play the video, sample it and 
+move to each sample by clicking on it. Then you can add content to each sample by using the text editor.
+
+You can see a list of created videos by going to Special:Viewer. From there you can click on one and view it.
+
+==5. Credits==
+This extension is implimented by Eranga Mapa <erangamapa@gmail.com>.
