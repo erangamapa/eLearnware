@@ -30,7 +30,7 @@ $dir = dirname(__FILE__) . '/';
 /*add the path from your server root to eLearnware extension folder.
 Example:
 Suppose your wiki is installed in a folder named wiki in your server root.
-Then $myPath='/wiki/extensions/eLearnware/';*/
+Then $myPath='/wiki/extensions/eLearnware/'  */
 $myPath='add your path here';
 
 //Loading class path to get directory details

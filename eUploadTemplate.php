@@ -19,7 +19,7 @@
 						<body>
 							<form name="uploadform" action="'.$_SERVER['PHP_SELF'].'">
 								<input type="text" id="videoname" name="videoname" />
-								<input type="submit" value="Upload" />
+								<input type="submit" value="Save" />
 							</form>
 						</body>
 					</html>';

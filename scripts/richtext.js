@@ -148,7 +148,7 @@ function writeRichText(rte, html, width, height, buttons, readOnly) {
 			document.writeln('</table>');
 		}
 		document.writeln('<iframe id="' + rte + '" name="' + rte + '" width="' + width + 'px" height="' + height + 'px" src="' + includesPath + 'blank.htm"></iframe>');
-		if (!readOnly) document.writeln('<br /><input type="checkbox" id="chkSrc' + rte + '" onclick="toggleHTMLSrc(\'' + rte + '\');" />&nbsp;View Source');
+		if (!readOnly) document.writeln('<br /><input type="hidden" id="chkSrc' + rte + '" onclick="toggleHTMLSrc(\'' + rte + '\');" />');
 		document.writeln('<iframe width="154" height="104" id="cp' + rte + '" src="' + includesPath + 'palette.htm" marginwidth="0" marginheight="0" scrolling="no" style="visibility:hidden; position: absolute;"></iframe>');
 		document.writeln('<input type="hidden" id="hdn' + rte + '" name="' + rte + '" value="">');
 		document.writeln('</div>');
