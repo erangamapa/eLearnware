@@ -1,0 +1,1 @@
+CREATE TABLE my_wikislides(video_name varchar(20),in_time int,out_time int,content varchar(1000));
